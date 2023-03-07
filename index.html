@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Waste Reduction Program</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Food Expiration Date Checker</h1>
+      <form>
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name">
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="date" id="expiration-date" name="expiration-date">
+
+        <button type="button" onclick="addFoodItem()">Add Item</button>
+      </form>
+
+      <ul id="food-list">
+      </ul>
+
+      <button type="button" onclick="checkExpiration()">Check Expiration</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
